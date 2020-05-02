@@ -500,7 +500,7 @@ class FormHelper extends \Cake\View\Helper\FormHelper {
     /**
      * {@inheritDoc}
      */
-    protected function _getInput(string $fieldName, array $options = []): string {
+    protected function _getInput(string $fieldName, array $options = []) {
         $label = $options['labelOptions'];
         switch (strtolower($options['type'])) {
             case 'inlineradio':
